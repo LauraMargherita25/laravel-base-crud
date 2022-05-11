@@ -1,8 +1,8 @@
 @extends('temeplates.base')
 
-@section('pageTitle', 'Home')
+@section('pageTitle', 'Comic')
 
-@section('showMain')
+@section('pageMain')
 <main>
     <div>
         

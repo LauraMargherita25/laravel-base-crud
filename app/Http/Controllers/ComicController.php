@@ -56,10 +56,10 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        // return view('comic.show', [
-        //     'pageTitle' => $comic->title,
-        //     'comic'     => $comic,
-        // ]);
+        return view('comic.show', [
+            'pageTitle' => $comic->title,
+            'comic'     => $comic,
+        ]);
         
     }
 
