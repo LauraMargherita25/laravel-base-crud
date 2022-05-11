@@ -31,10 +31,10 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    // public function create()
-    // {
-    //     //
-    // }
+    public function create()
+    {
+        return view('comic.create');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -43,10 +43,12 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    // public function store(Request $request)
-    // {
-    //     //
-    // }
+    public function store(Request $request)
+    {
+        $formData = $request->all();
+        $newComic = Comic::create($formData);
+        return redirect()->route('comics.show', $newComic->id);
+    }
 
     /**
      * Display the specified resource.
