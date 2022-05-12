@@ -11,7 +11,9 @@
         <h3>{{ $comic->series }}</h3>
         <p>{{ $comic->description }}</p>
         <p>{{ $comic->price }}</p>
-        
+        <p>{{ $comic->sale_date }}</p>
+        <p>{{ $comic->type }}</p>
+
     </div>
 </main>
 @endsection
