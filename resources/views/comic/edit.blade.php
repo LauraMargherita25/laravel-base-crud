@@ -41,7 +41,8 @@
                 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-                <a href="{{ url()->previous() }}" class="btn btn-primary">Back</a>
+                {{-- <a href="{{ url()->previous() }}" class="btn btn-primary">Back</a> --}}
+                <a href="{{ route('comics.show', $comic->id ) }}" class="btn btn-primary">Back</a>
             </div>
         </div>
     </div>
