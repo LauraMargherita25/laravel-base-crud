@@ -72,10 +72,10 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-     // public function edit(Comic $comic)
-    // {
-    //     //
-    // }
+     public function edit(Comic $comic)
+    {
+        return view('comic.edit', compact('comic'));
+    }
 
     /**
      * Update the specified resource in storage.
@@ -85,10 +85,13 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-     // public function update(Request $request, Comic $comic)
-    // {
-    //     //
-    // }
+     public function update(Request $request, Comic $comic)
+    {
+        $formData = $request->all();
+        $comic->update($formData);
+        return redirect()->route('comics.show', $comic->id);
+
+    }
 
     /**
      * Remove the specified resource from storage.
