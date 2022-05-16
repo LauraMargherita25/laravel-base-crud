@@ -12178,12 +12178,6 @@ fieldset:disabled .btn {
   }
 }
 
-header {
-  position: fixed;
-  background-color: blue;
-  width: 100%;
-}
-
 .container .card {
   margin: 1rem;
 }
