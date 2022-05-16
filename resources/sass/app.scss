@@ -7,6 +7,18 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+header{
+    .img-container{
+        width: 60px;
+        height: 60px;
+        
+        img{
+            width: 100%;
+            object-fit: fill;
+            object-position: center;
+        }
+    }
+}
 
 .container{
     .card{

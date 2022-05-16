@@ -12178,6 +12178,19 @@ fieldset:disabled .btn {
   }
 }
 
+header .img-container {
+  width: 60px;
+  height: 60px;
+}
+
+header .img-container img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .container .card {
   margin: 1rem;
 }
